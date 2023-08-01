@@ -1,0 +1,8 @@
+- name: install the latest version of Apache
+  hosts: webservers
+  become: true
+  tasks:
+  - name: Install package
+    yum:
+     name: git
+     state: installed  
